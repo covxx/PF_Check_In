@@ -1,2 +1,7 @@
-# PF_Check_In
-Simple web view app to view a google form on via kiosk mode.
+# Driver-Check-In-v1
+
+A new Flutter project.
+
+## Getting Started
+
+FlutterFlow projects are built to run on the Flutter _stable_ release.
