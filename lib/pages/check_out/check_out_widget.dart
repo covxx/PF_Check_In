@@ -4,11 +4,13 @@ import '/flutter_flow/flutter_flow_web_view.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'check_out_model.dart';
 export 'check_out_model.dart';
 
 class CheckOutWidget extends StatefulWidget {
-  const CheckOutWidget({super.key});
+  const CheckOutWidget({Key? key}) : super(key: key);
 
   @override
   _CheckOutWidgetState createState() => _CheckOutWidgetState();
@@ -51,7 +53,7 @@ class _CheckOutWidgetState extends State<CheckOutWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(0.0),
+          preferredSize: Size.fromHeight(0.0),
           child: AppBar(
             backgroundColor: FlutterFlowTheme.of(context).primary,
             automaticallyImplyLeading: false,
@@ -63,7 +65,7 @@ class _CheckOutWidgetState extends State<CheckOutWidget> {
                     fontSize: 22.0,
                   ),
             ),
-            actions: const [],
+            actions: [],
             centerTitle: false,
             elevation: 2.0,
           ),
@@ -73,7 +75,7 @@ class _CheckOutWidgetState extends State<CheckOutWidget> {
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
-              const FlutterFlowWebView(
+              FlutterFlowWebView(
                 content:
                     'https://docs.google.com/forms/d/e/1FAIpQLSdOBlNITNyN6C5b9AucAbRj7kr94L_4TrcyY08QZcclAtxTSA/viewform?vc=0&c=0&w=1&flr=0',
                 bypass: false,
@@ -88,16 +90,16 @@ class _CheckOutWidgetState extends State<CheckOutWidget> {
                 text: 'Press When Finished',
                 options: FFButtonOptions(
                   height: 40.0,
-                  padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                   iconPadding:
-                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).primary,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Inter',
                         color: Colors.white,
                       ),
                   elevation: 3.0,
-                  borderSide: const BorderSide(
+                  borderSide: BorderSide(
                     color: Colors.transparent,
                     width: 1.0,
                   ),
